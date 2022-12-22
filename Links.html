@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Semester Eksamen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<meta name=”robots” content=”noindex”>
+<body>
+    <!--her er min header, der er et "logo" med alt-teskt og en knap til akut telefonen-->
+    <header>
+        <img class="logo" src="img/Smingkøbing Lægehus.png" alt=" Smingkøbing Lægehus" width="600px" height="80px">
+        <!--jeg ville gerne have at akut telefonen havde en funktion, derfor gav jeg den en alert function så den kunne vise akut nummeret inspiration: https://www.w3schools.com/jsref/met_win_alert.asp-->
+        <a class="Akut" href="#"><button onclick="myfunction()">Akut Telefon</button>
+            <script>function myfunction() {alert("Akut-telefon: Tlf:9674 3031");} </script>
+    </header>
+    <!--Dette er min nav bar som man bruger til at navigere hjemmesiden med, i midten er der en knap til selvbetjening inspiration: https://www.youtube.com/watch?v=PwWHL3RyQgk-->
+    <nav>
+        <ul class="nav_links">
+            <li class="Bass"> <a href="Forside.html" class="knap">Forside</a></li>
+            <li class="Bass"> <a href="Læger og personale.html" class="knap">Læger og Personale</a></li>
+            <ol>
+                <a class="Selv" href="https://laegevejen.dk/Login"><button>Selvbetjening</button></a>
+            </ol>
+            <li class="Bass"> <a href="Aktuelt.html" class="knap">Aktuelt</a></li>
+            <li class="Bass"> <a href="Links.html" class="knap">Links</a></li>
+        </ul>
+    </nav>
+    <!--her har jeg endnu en navbar, for at undgå forvirring mellem li, a og ul tags har jeg givet dem alle en klasse, men jeg løb tør for navne så de bliver kaldt hvad end jeg lige kunne finde på inspiration:https://www.youtube.com/watch?v=rgUp302f_lY-->
+    <nav class="links">
+        <ul class="overemner">
+            <li class="Bong"><a class="link" href="#">Astma, rygelunger, allergi og eksem</a>
+                <ul class="Bang">
+                    <li class="videre" ><a class="bing" href="https://www.astma-allergi.dk/?gclid=EAIaIQobChMI9e6ggKre3wIViOFRCh1ILAD_EAAYASAAEgI1ovD_BwE">Astma og allergi forbundet</a></li>
+                    <li class="videre" ><a class="bing" href="https://atopiskeksemforening.dk/fakta-atopisk-eksem/hvad-er-atopisk-eksem/">Om børneeksem/atopisk dermatit</a></li> 
+                 </ul>
+            </li>
+            <li class="Bong"><a class="link" href="#">Bevægeapparat lidelser</a>
+                <ul class="Bang">
+                    <li class="videre" ><a class="bing" href="https://www.gigtforeningen.dk/">Gigtforeningen</a></li>
+                    <li class="videre" ><a class="bing" href="https://www.gigtforeningen.dk/et-sundt-liv/motion-og-traening/">Gigtforeningen motion og link til billeder og videoer af øvelser</a></li> 
+                 </ul>
+            </li>
+            <li class="Bong"><a class="link" href="#">Links til forskellige sundhedssider</a>
+                <ul class="Bang">
+                    <li class="videre" ><a class="bing" href="https://www.sundhed.dk/">Sundhed.dk</a></li>
+                    <li class="videre" ><a class="bing" href="https://www.netdoktor.dk/">Netdoktor</a></li> 
+                    <li class="videre" ><a class="bing" href="https://www.sundhed.rm.dk/rettigheder/kontakt-patientkontoret">Patientkontor</a></li>
+                    <li class="videre" ><a class="bing" href="https://www.helse.dk/">Helse.dk</a></li>
+                    <li class="videre" ><a class="bing" href="https://www.laegevagten.dk/">Lægevagten.dk</a></li>
+                 </ul>
+            </li>
+            <li class="Bong"><a class="link" href="#">Vitaminer og kosttilskud </a>
+                <ul class="Bang">
+                    <li class="videre" ><a class="bing" href="https://videnskab.dk/krop-sundhed/danske-d-vitamin-anbefalinger-bliver-udfordret">D-vitamin anbefalinger</a></li>
+                    <li class="videre" ><a class="bing" href="https://altomkost.dk/fakta/kort-om-naeringsstoffer/jern">Jern, anbefalinger</a></li>
+                    <li class="videre" ><a class="bing" href="https://www.sundhed.dk/borger/patienthaandbogen/blod/sygdomme/anaemier/folatmangel/">Folat/folinsyre</a></li> 
+                    <li class="videre" ><a class="bing" href="https://www.sundhed.dk/borger/patienthaandbogen/mave-og-tarm/sygdomme/tyndtarm/foedevareoverfoelsomhed/">Fødevareallergi</a></li>  
+                 </ul>
+            </li>
+        </ul>
+    </nav>
+    <!--her har jeg min footer som gerne skulle blive i bunden af min hjemmeside inspiration:https://www.youtube.com/watch?v=yc2olxLgKLk-->
+    <footer>
+        <div class="footer-content" id="foot">
+            <button class="btn" href="https://www.sundhed.dk/borger/patienthaandbogen/" type="button">KLIK HER FOR AT LÆSE PATIENT HÅNDBOGEN</button>
+            <p>Privatlivspolitik</p>
+            <p>dette site er kun til undervisningsformål</p>
+
+        </div>
+    </footer>
+</body>
+</html>

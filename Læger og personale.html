@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Semester Eksamen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<meta name=”robots” content=”noindex”>
+<body>
+    <!--her er min header, der er et "logo" med alt-teskt og en knap til akut telefonen-->
+    <header>
+        <img class="logo" src="img/Smingkøbing Lægehus.png" alt=" Smingkøbing Lægehus" width="600px" height="80px">
+        <!--jeg ville gerne have at akut telefonen havde en funktion, derfor gav jeg den en alert function så den kunne vise akut nummeret inspiration: https://www.w3schools.com/jsref/met_win_alert.asp-->
+        <a class="Akut" href="#"><button onclick="myfunction()">Akut Telefon</button>
+            <script>function myfunction() {alert("Akut-telefon: Tlf:9674 3031");} </script>
+    </header>
+    <!--Dette er min nav bar som man bruger til at navigere hjemmesiden med, i midten er der en knap til selvbetjening inspiration: https://www.youtube.com/watch?v=PwWHL3RyQgk-->
+    <nav>
+        <ul class="nav_links">
+            <li class="Bass"> <a href="Forside.html" class="knap">Forside</a></li>
+            <li class="Bass"> <a href="Læger og personale.html" class="knap">Læger og Personale</a></li>
+            <ol>
+                <a class="Selv" href="https://laegevejen.dk/Login"><button>Selvbetjening</button></a>
+            </ol>
+            <li class="Bass"> <a href="Aktuelt.html" class="knap">Aktuelt</a></li>
+            <li class="Bass"> <a href="Links.html" class="knap">Links</a></li>
+        </ul>
+    </nav>
+    <h7>Læger og Personale:</h7>
+    <div class="læger">
+        <div class="Speciallæge">
+        <p class="profession">Speciallæge i Alm. Medicin:</p>
+        <p>Ove Tåstrup Larsen (f. 1968)</p>
+        <p>Anne Petersen (f. 1972)</p>
+        <p>Søren Kofod (f. 1968)</p>
+        <br>
+        </div>
+        <div class="Sygeplejerske">
+        <p class="profession">Sygeplejerske:</p>
+        <p>Poul Løvdahl</p>
+        <p>Lis Dyris</p>
+        <p>Lars Barfod</p>
+        <p>Sanne Sørensen</p>
+        <br>
+        </div>
+        <div class="Fysioterapeut">
+        <p class="profession">Fysioterapeut:</p>
+        <p>Helle Samsgård</p>
+        <br>
+        </div>
+        <div class="Lægesekretær">
+        <p class="profession">Lægesekretær:</p>
+        <p>Iver Søvndahl</p>
+        <p>Lone Poulsen</p>
+        <p>Hanne Skaaning</p>
+        <p>Arne Hadbjerg</p>
+        <br>
+        </div>
+        <div class="Bioanalytiker">
+        <p class="profession">Bioanalytiker:</p>
+        <p>Pia Stampe</p>
+        <p>Thor Nygaard</p>
+        <br>
+        </div>
+        <div class="læge">
+        <img class="Doktor" src="img/Doktor.png" alt="Doktor">
+        <p>Ove Tåstrup</p>
+        </div>
+    </div>
+    <!--her har jeg min footer som gerne skulle blive i bunden af min hjemmeside inspiration:https://www.youtube.com/watch?v=yc2olxLgKLk-->
+    <footer>
+        <div class="footer-content">
+            <button class="btn" href="https://www.sundhed.dk/borger/patienthaandbogen/" type="button">KLIK HER FOR AT LÆSE PATIENT HÅNDBOGEN</button>
+            <p>Privatlivspolitik</p>
+            <p>dette site er kun til undervisningsformål</p>
+
+        </div>
+    </footer>
+</body>
+</html>

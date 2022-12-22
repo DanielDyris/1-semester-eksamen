@@ -1,0 +1,355 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/*her har jeg to classes og en knap, der står et komma imellem dem så alle tre elementer får samme styling, hvis jeg ikke havde komma var det kun knappen der blev stylet*/
+.Bass, .knap, button {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4070A0;
+    text-decoration: none;
+}
+
+.nav_links{
+    margin-bottom: 20px;
+}
+/*jeg har sat display flex på så alt i headeren står ved siden af hinanden og flex-end så alt bliver skubbet til slutningen af headeren*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    margin-top: auto;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    
+}
+/*her bruger jeg inline block til at skabe kasser og så bruger jeg padding til at give mine links noget pusterum og padding left til at skabe mellemrum*/
+.nav_links .Bass {
+    display: inline-block;
+    padding: 0px 50px;
+    padding-left: 11%;
+}
+
+/*transition giver en fade in og jeg kan bestemme hvor hurtigt det går*/
+.nav_links .Bass .knap {
+    transition: all 0.3s ease 0s;
+}
+/*her har jeg hover effekten så når min mus hover kommer der en bagggrundsfarve*/
+.nav_links  .Bass .knap:hover {
+    color: rgb(173, 173, 176);
+}
+
+/*pointer gør at musen ændre udseende når man holder musen over knappen*/
+
+button{
+    border: 3px solid #4070A0;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*endnu en hover funktion*/
+
+button:hover {
+    background-color: rgba(169, 169, 169, 0.8)
+    
+}
+
+.nav_links{
+    border-top: solid black;
+    border-bottom: solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.logo {
+    display: block;
+    margin: 0px auto;
+}
+/*line-height sætter højden for linjen*/
+.knap, .Selv {
+    line-height: 68px;
+}
+
+/*postion absolute gør jeg kan bestemme hvor objektet skal placeres uden at relatere det til andre objekter*/
+.Akut {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+
+/*text-align gør at jeg kan centrere min tekst*/
+
+h1 {
+    color: #4070A0;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #4070A0;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Telefon{
+    display: flex;
+    height: 300px;
+    float: right;
+    margin: 40px;
+    padding-right: 20%;
+}
+
+/*Justify content center gør at jeg kan sætte flex items på en linje efter aksen på den nuværende flex container*/
+
+h3, .bor1{
+    
+    font-family: sans-serif;
+    color: #4070A0;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+h3 {
+    margin-top: 40px;
+    display: flex;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Klinik{
+    display: flex;
+    height: 350px;
+    vertical-align: text-top;
+    margin: 60px;
+    padding-right: 10px;
+    float: left;
+    padding-left: 10%;
+}
+
+h4, .åbentid{
+    
+    font-family: sans-serif;
+    color: #4070A0;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-right: 10%;
+}
+
+h4 {
+    margin-top: 70px;
+    display: flex;
+    padding-left: 80px;
+    padding-bottom: 40px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.kort{
+    display: flex;
+    height: 350px;
+    vertical-align: text-top;
+    float: right;
+    margin: 40px;
+    padding-right: 10%;
+}
+
+h5, .sted{
+    
+    font-family: sans-serif;
+    color: #4070A0;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+h5 {
+    margin-top: 180px;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+/*100vw gør at den fylder 100% af siden*/
+
+footer{
+    height: auto;
+    width: 100vw;
+    border: solid black;
+    font-family: sans-serif;
+    margin-top: 200px;
+    padding-top: 20px;
+    color: #4070A0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h7 {
+    color: #4070A0;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.læger{
+    color: #4070A0;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    margin-left: 20%;
+}
+
+.profession{
+    color: black;
+}
+
+.Doktor{
+    height: 150px;
+}
+
+.læge{
+    float: right;
+}
+
+h8 {
+    color: #4070A0;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 25%;
+}
+
+.info{
+    color: #4070A0;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 25%;
+    padding: 5px;
+}
+
+
+h9 {
+    color: #4070A0;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 25%;
+}
+
+.vaccin{
+    padding-bottom: 30px;
+}
+
+.links{
+    width: 100%;
+    height: 60px;
+}
+
+.links .overemner{
+    
+    display: flex;
+    justify-content: center;
+}
+
+/*line-height normal gør at mine elementer ikke går hen over hinanden*/
+/*list-style none gør at mine li tags mister deres punkt i starten*/
+.links .overemner .Bong{
+    float: left;
+    list-style: none;
+    position: relative;
+    line-height: Normal;
+    text-align: center;
+    border: solid #4070A0;
+}
+
+/*text-decoration none gør at links mister deres streg*/
+/*display block gør mine punkter mere fyldige*/
+.links .overemner .Bong .link{
+    font-family: sans-serif;
+    color: #4070A0;
+    font-size: 20px;
+    margin: 22px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.links .overemner .Bong .Bang{
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+}
+
+/*Her bruger jeg også en hover, så min block bliver vist*/
+
+.links .overemner .Bong:hover .Bang{
+    display: block;
+    border: solid #4070A0;
+}
+
+.links .overemner .Bong .Bang .videre {
+    width: 180px;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 7px;
+}
+
+.links .overemner .Bong .Bang .videre .bing {
+    padding: 0px 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #4070A0;
+}
+
+
+
